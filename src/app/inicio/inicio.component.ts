@@ -62,8 +62,8 @@ export class InicioComponent implements OnInit {
   }
 
   getAllPostagens(){
-    this.temaService.getAllTema().subscribe((resp: Tema[])=>{
-      this.listaTemas = resp
+    this.postagemService.getAllPostagens().subscribe((resp: Postagem[])=> {
+    this.listaPostagens = resp
     })
   }
 
